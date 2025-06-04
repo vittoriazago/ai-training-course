@@ -83,24 +83,26 @@ const ModuleViewer: React.FC<ModuleViewerProps> = ({ activeModule, activeSubtopi
           </ReactMarkdown>
         </div>
         
-        <div className="navigation-buttons">
-          {prevSubtopic && (
-            <button 
-              className="prev-button"
-              onClick={() => onSubtopicChange(prevSubtopic.id)}
-            >
-              ← Anterior: {prevSubtopic.title}
-            </button>
-          )}
-          
-          {nextSubtopic && (
-            <button 
-              className="next-button"
-              onClick={() => onSubtopicChange(nextSubtopic.id)}
-            >
-              Próximo: {nextSubtopic.title} →
-            </button>
-          )}
+        <div className="floating-navigation-wrapper">
+          <div className="navigation-buttons">
+            {prevSubtopic && (
+              <button 
+                className="prev-button"
+                onClick={() => onSubtopicChange(prevSubtopic.id)}
+              >
+                ← Anterior: {prevSubtopic.title}
+              </button>
+            )}
+            
+            {nextSubtopic && (
+              <button 
+                className="next-button"
+                onClick={() => onSubtopicChange(nextSubtopic.id)}
+              >
+                Próximo: {nextSubtopic.title} →
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>

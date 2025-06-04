@@ -10,9 +10,6 @@ export const exerciciosSubtopics = [
 
 Nesta seção, vamos praticar a aplicação das técnicas de engenharia de prompt especificamente para a geração de código. Vamos explorar exemplos práticos e exercícios interativos.
 
-![Diagrama ilustrando conceitos de IA](/assets/images/ai_concepts_diagram.png)
-*<p class="image-caption">Conceitos fundamentais de IA aplicados ao desenvolvimento de software.</p>*
-
 ## Exemplo 1: Geração de uma Função de Validação
 
 ### Problema:

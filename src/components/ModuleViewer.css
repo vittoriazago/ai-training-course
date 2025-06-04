@@ -5,7 +5,8 @@
 }
 
 .sidebar {
-  width: 250px;
+  width: 30%;
+  min-width: 250px;
   flex-shrink: 0;
   background-color: #f8f9fa;
   border-radius: 8px;
@@ -51,10 +52,10 @@
 }
 
 .sidebar li.active {
-  background-color: #3498db;
+  background-color: #2196F3;
   color: white;
   font-weight: 600;
-  box-shadow: 0 2px 5px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 2px 5px rgba(33, 150, 243, 0.3);
 }
 
 .topic-number {
@@ -62,7 +63,7 @@
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #3498db;
+  background-color: #2196F3;
   color: white;
   width: 20px;
   height: 20px;
@@ -76,7 +77,7 @@
 
 .sidebar li.active .topic-number {
   background-color: white;
-  color: #3498db;
+  color: #2196F3;
 }
 
 .content-container {
@@ -92,45 +93,59 @@
   margin-bottom: 20px;
 }
 
+.floating-navigation-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+}
+
 .navigation-buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  gap: 15px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .prev-button, .next-button {
-  background-color: #f8f9fa;
   border: 1px solid #dee2e6;
-  border-radius: 6px;
-  padding: 12px 20px;
+  border-radius: 8px;
+  padding: 8px 15px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   transition: all 0.3s;
   display: flex;
   align-items: center;
-  min-width: 180px;
+  min-width: unset;
 }
 
 .prev-button {
+  background-color: #f8f9fa;
   justify-content: flex-start;
 }
 
 .next-button {
+  background-color: #2196F3;
+  color: white;
   justify-content: flex-end;
   margin-left: auto;
 }
 
 .prev-button:hover, .next-button:hover {
-  background-color: #e9ecef;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #1976D2;
 }
 
 /* Estilos para títulos numerados */
 .module-content h1 {
   position: relative;
-  padding-left: 45px;
+  padding-left: 5px;
 }
 
 .module-content h1::before {
@@ -138,7 +153,7 @@
   position: absolute;
   left: 0;
   top: 5px;
-  background-color: #3498db;
+  background-color: #2196F3;
   color: white;
   width: 35px;
   height: 35px;
@@ -152,7 +167,6 @@
 
 .module-content h2 {
   position: relative;
-  padding-left: 35px;
 }
 
 .module-content h2::before {
@@ -160,14 +174,14 @@
   position: absolute;
   left: 0;
   top: 3px;
-  color: #3498db;
+  color: #2196F3;
   font-weight: bold;
   font-size: 18px;
 }
 
 .module-content h3 {
   position: relative;
-  padding-left: 35px;
+  padding-left: 5px;
 }
 
 .module-content h3::before {
@@ -175,7 +189,7 @@
   position: absolute;
   left: 0;
   top: 2px;
-  color: #3498db;
+  color: #2196F3;
   font-weight: bold;
   font-size: 16px;
 }
@@ -193,13 +207,27 @@
     margin-bottom: 20px;
   }
   
+  .floating-navigation-wrapper {
+    position: static;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    margin-top: 20px;
+  }
+
   .navigation-buttons {
     flex-direction: column;
+    gap: 10px;
+    padding: 0;
   }
   
   .prev-button, .next-button {
     width: 100%;
     justify-content: center;
+    padding: 12px 20px;
+    font-size: 15px;
   }
   
   .module-content h1,

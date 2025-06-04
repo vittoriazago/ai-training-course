@@ -1,9 +1,9 @@
 .quiz-container {
   background-color: #f8f9fa;
-  border-radius: 10px;
+  border-radius: 8px; /* Standardized */
   padding: 25px;
   margin: 30px 0;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Consistent shadow */
 }
 
 .quiz-container h2 {
@@ -17,7 +17,7 @@
   margin-bottom: 25px;
   background-color: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 8px; /* Already 8px, but keeping for consistency */
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
@@ -38,7 +38,7 @@
   align-items: center;
   padding: 10px 15px;
   background-color: #f1f3f5;
-  border-radius: 6px;
+  border-radius: 8px; /* Standardized */
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -52,12 +52,12 @@
 }
 
 .submit-button {
-  background-color: #3498db;
+  background-color: #2196F3; /* New primary blue */
   color: white;
   border: none;
   padding: 12px 25px;
   font-size: 16px;
-  border-radius: 6px;
+  border-radius: 8px; /* Standardized */
   cursor: pointer;
   display: block;
   margin: 30px auto 10px;
@@ -65,7 +65,7 @@
 }
 
 .submit-button:hover {
-  background-color: #2980b9;
+  background-color: #1976D2; /* Darker blue */
 }
 
 .submit-button:disabled {
@@ -76,9 +76,9 @@
 .results {
   background-color: white;
   padding: 25px;
-  border-radius: 8px;
+  border-radius: 8px; /* Already 8px, but keeping for consistency */
   margin-top: 30px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Consistent shadow */
 }
 
 .results h3 {
