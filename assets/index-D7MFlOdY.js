@@ -417,7 +417,7 @@ Sugira uma arquitetura para um novo aplicativo de e-commerce, considerando:
 Modelos de linguagem nem sempre chegam à resposta correta diretamente, especialmente para problemas que exigem **raciocínio passo a passo**. A técnica da **Cadeia de Pensamento (Chain-of-Thought ou CoT)** incentiva o modelo a "pensar alto", detalhando seu processo de raciocínio antes de fornecer a resposta final.
 
 ![Diagrama ilustrando as técnicas de engenharia de prompt](__BASE_URL__/images/prompt_engineering_techniques.png)
-*<p class="image-caption">Técnicas como Role Prompting, Chain-of-Thought e Few-Shot Learning ajudam a guiar a IA.</p>*
+- Técnicas como Role Prompting, Chain-of-Thought e Few-Shot Learning ajudam a guiar a IA.
 
 > **CONCEITO CHAVE:** A Cadeia de Pensamento é particularmente valiosa para tarefas complexas como depuração, otimização de algoritmos e resolução de problemas lógicos.
 
@@ -728,7 +728,7 @@ Antes de enviar seu prompt, verifique se ele:
 Além do texto do prompt em si, muitas APIs e ferramentas de IA permitem ajustar **parâmetros de configuração** que influenciam como o modelo gera a resposta. Compreender e utilizar essas configurações é crucial para refinar os resultados.
 
 ![Diagrama ilustrando parâmetros de configuração de prompt](__BASE_URL__/images/prompt_config_parameters.png)
-*<p class="image-caption">Parâmetros como Temperatura, Janela de Contexto e Tokens influenciam a saída da IA.</p>*
+ - Parâmetros como Temperatura, Janela de Contexto e Tokens influenciam a saída da IA.
 
 ## Temperatura (Temperature)
 
@@ -1083,7 +1083,8 @@ Com base nesta avaliação, forneça uma implementação aprimorada que aborde q
 Diferentes ferramentas de IA têm características distintas que podem influenciar a forma como você estrutura seus prompts. Vamos explorar algumas das ferramentas mais relevantes para desenvolvedores.
 
 ![Exemplo de interface do VSCode com ferramentas de IA](__BASE_URL__/images/ai_tools_vscode.png)
-*<p class="image-caption">Ferramentas como Copilot e Cline se integram diretamente ao VSCode.</p>*
+
+- Ferramentas como Copilot e Cline se integram diretamente ao VSCode.
 
 ## GitHub Copilot
 
