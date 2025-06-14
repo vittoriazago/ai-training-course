@@ -6,6 +6,8 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import './ModuleViewer.css';
 
+const BASE_URL = import.meta.env.VITE_BASE_URL || '';
+
 interface ModuleViewerProps {
   activeModule: string;
   activeSubtopic: string;
@@ -66,17 +68,21 @@ const ModuleViewer: React.FC<ModuleViewerProps> = ({ activeModule, activeSubtopi
             remarkPlugins={[remarkGfm]}
             components={{
               h1: ({node, ...props}) => {
-                const dataNumber = node?.properties?.['data-number'] || '';
+                const { properties } = node || {};
+                const dataNumber = properties?.['data-number'] || '';
                 return <h1 data-number={dataNumber} {...props} />;
               },
               h2: ({node, ...props}) => {
-                const dataNumber = node?.properties?.['data-number'] || '';
+                const { properties } = node || {};
+                const dataNumber = properties?.['data-number'] || '';
                 return <h2 data-number={dataNumber} {...props} />;
               },
               h3: ({node, ...props}) => {
-                const dataNumber = node?.properties?.['data-number'] || '';
+                const { properties } = node || {};
+                const dataNumber = properties?.['data-number'] || '';
                 return <h3 data-number={dataNumber} {...props} />;
-              }
+              },
+              img: ({...props}) => <img {...props} src={props.src?.replace('__BASE_URL__', BASE_URL)} />
             }}
           >
             {addNumbersToHeadings(currentSubtopic.content)}
