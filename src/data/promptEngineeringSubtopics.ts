@@ -1,8 +1,8 @@
 // Novo submódulo sobre configurações de prompt
 export const promptEngineeringSubtopics = [
   {
-    id: 'introducao-prompt',
-    title: 'O Que é Engenharia de Prompt?',
+    id: "introducao-prompt",
+    title: "O Que é Engenharia de Prompt?",
     content: `
 # O Que é Engenharia de Prompt?
 
@@ -32,11 +32,11 @@ A engenharia de prompt eficaz combina:
 * **Entendimento das capacidades e limitações do modelo de IA**
 
 **PARA DESENVOLVEDORES:** Dominar esta habilidade permite transformar modelos de IA generativa em verdadeiros assistentes de programação, multiplicando sua produtividade e capacidade criativa.
-`
+`,
   },
   {
-    id: 'tecnica-role-prompting',
-    title: 'Técnica: Atribuição de Papel (Role Prompting)',
+    id: "tecnica-role-prompting",
+    title: "Técnica: Atribuição de Papel (Role Prompting)",
     content: `
 # Técnica: Atribuição de Papel (Role Prompting)
 
@@ -106,11 +106,11 @@ Sugira uma arquitetura para um novo aplicativo de e-commerce, considerando:
 | **QA Engineer** | Testes e qualidade | Abordagem sistemática para identificar casos de teste |
 
 **DICA AVANÇADA:** Combine papéis para problemas complexos. Por exemplo: "Você é um engenheiro de software sênior com especialização em segurança de aplicações web..."
-`
+`,
   },
   {
-    id: 'tecnica-chain-of-thought',
-    title: 'Técnica: Cadeia de Pensamento (Chain-of-Thought)',
+    id: "tecnica-chain-of-thought",
+    title: "Técnica: Cadeia de Pensamento (Chain-of-Thought)",
     content: `
 # Técnica: Cadeia de Pensamento (Chain-of-Thought)
 
@@ -118,7 +118,7 @@ Sugira uma arquitetura para um novo aplicativo de e-commerce, considerando:
 
 Modelos de linguagem nem sempre chegam à resposta correta diretamente, especialmente para problemas que exigem **raciocínio passo a passo**. A técnica da **Cadeia de Pensamento (Chain-of-Thought ou CoT)** incentiva o modelo a "pensar alto", detalhando seu processo de raciocínio antes de fornecer a resposta final.
 
-![Diagrama ilustrando as técnicas de engenharia de prompt](/assets/images/prompt_engineering_techniques.png)
+![Diagrama ilustrando as técnicas de engenharia de prompt](/images/prompt_engineering_techniques.png)
 *<p class="image-caption">Técnicas como Role Prompting, Chain-of-Thought e Few-Shot Learning ajudam a guiar a IA.</p>*
 
 > **CONCEITO CHAVE:** A Cadeia de Pensamento é particularmente valiosa para tarefas complexas como depuração, otimização de algoritmos e resolução de problemas lógicos.
@@ -208,11 +208,11 @@ Analise este algoritmo passo a passo:
 * **Depuração facilitada:** Identifica onde o raciocínio pode ter divergido
 
 **DICA PRÁTICA:** Combine CoT com Role Prompting para resultados ainda melhores: "Você é um especialista em otimização de algoritmos. Analise este código passo a passo..."
-`
+`,
   },
   {
-    id: 'tecnica-few-shot',
-    title: 'Técnica: Exemplos de Poucas Tentativas (Few-Shot)',
+    id: "tecnica-few-shot",
+    title: "Técnica: Exemplos de Poucas Tentativas (Few-Shot)",
     content: `
 # Técnica: Exemplos de Poucas Tentativas (Few-Shot)
 
@@ -323,11 +323,11 @@ Esta técnica é extremamente poderosa quando combinada com:
 * **Chain-of-Thought:** Inclua o raciocínio nos exemplos para induzir o mesmo padrão
 
 **DICA AVANÇADA:** Para tarefas de formatação específica (como geração de código em um estilo particular), few-shot é frequentemente a técnica mais eficaz.
-`
+`,
   },
   {
-    id: 'boas-praticas',
-    title: 'Boas Práticas de Engenharia de Prompt',
+    id: "boas-praticas",
+    title: "Boas Práticas de Engenharia de Prompt",
     content: `
 # Boas Práticas de Engenharia de Prompt
 
@@ -432,11 +432,11 @@ Antes de enviar seu prompt, verifique se ele:
 - [ ] Inclui exemplos relevantes (quando apropriado)
 - [ ] Delimita claramente diferentes partes
 - [ ] Não contém informações sensíveis
-`
+`,
   },
   {
-    id: 'configuracoes-prompt',
-    title: 'Configurações Técnicas de Prompt',
+    id: "configuracoes-prompt",
+    title: "Configurações Técnicas de Prompt",
     content: `
 # Configurações Técnicas de Prompt
 
@@ -444,7 +444,7 @@ Antes de enviar seu prompt, verifique se ele:
 
 Além do texto do prompt em si, muitas APIs e ferramentas de IA permitem ajustar **parâmetros de configuração** que influenciam como o modelo gera a resposta. Compreender e utilizar essas configurações é crucial para refinar os resultados.
 
-![Diagrama ilustrando parâmetros de configuração de prompt](/assets/images/prompt_config_parameters.png)
+![Diagrama ilustrando parâmetros de configuração de prompt](/images/prompt_config_parameters.png)
 *<p class="image-caption">Parâmetros como Temperatura, Janela de Contexto e Tokens influenciam a saída da IA.</p>*
 
 ## Temperatura (Temperature)
@@ -511,11 +511,11 @@ Além do texto do prompt em si, muitas APIs e ferramentas de IA permitem ajustar
 | **Stop Sequences** | Fim da geração | Para garantir formatos específicos ou evitar conteúdo indesejado |
 
 **PARA DESENVOLVEDORES:** Experimentar com essas configurações é fundamental. Comece com os valores padrão e ajuste iterativamente com base nos resultados desejados para sua aplicação específica. A combinação certa de prompt e configurações pode melhorar drasticamente a qualidade e a eficiência das respostas da IA.
-`
+`,
   },
   {
-    id: 'exemplos-praticos',
-    title: 'Exemplos Práticos de Prompts para Desenvolvedores',
+    id: "exemplos-praticos",
+    title: "Exemplos Práticos de Prompts para Desenvolvedores",
     content: `
 # Exemplos Práticos de Prompts para Desenvolvedores
 
@@ -690,11 +690,11 @@ Forneça o código refatorado completo com comentários explicativos.
 \`\`\`
 
 **LEMBRE-SE:** A prática constante e a iteração são essenciais para dominar a engenharia de prompt. Experimente diferentes abordagens, combine técnicas e refine seus prompts com base nos resultados obtidos.
-`
+`,
   },
   {
-    id: 'padroes-avancados',
-    title: 'Padrões Avançados de Prompting',
+    id: "padroes-avancados",
+    title: "Padrões Avançados de Prompting",
     content: `
 # Padrões Avançados de Prompting
 
@@ -802,11 +802,11 @@ Com base nesta avaliação, forneça uma implementação aprimorada que aborde q
 | **Auto-Avaliação** | Melhorar qualidade e identificar pontos cegos | Pode não identificar todos os problemas | Forneça critérios específicos de avaliação |
 
 **DICA PARA ESPECIALISTAS:** Estes padrões podem ser combinados entre si e com as técnicas fundamentais para resolver problemas extremamente complexos. Por exemplo, um prompt recursivo onde cada etapa usa role prompting e inclui auto-avaliação.
-`
+`,
   },
   {
-    id: 'ferramentas-especificas',
-    title: 'Prompts para Ferramentas Específicas de IA',
+    id: "ferramentas-especificas",
+    title: "Prompts para Ferramentas Específicas de IA",
     content: `
 # Prompts para Ferramentas Específicas de IA
 
@@ -814,7 +814,7 @@ Com base nesta avaliação, forneça uma implementação aprimorada que aborde q
 
 Diferentes ferramentas de IA têm características distintas que podem influenciar a forma como você estrutura seus prompts. Vamos explorar algumas das ferramentas mais relevantes para desenvolvedores.
 
-![Exemplo de interface do VSCode com ferramentas de IA](/assets/images/ai_tools_vscode.png)
+![Exemplo de interface do VSCode com ferramentas de IA](/images/ai_tools_vscode.png)
 *<p class="image-caption">Ferramentas como Copilot e Cline se integram diretamente ao VSCode.</p>*
 
 ## GitHub Copilot
@@ -964,6 +964,6 @@ em tons de verde e branco, visualizado em um smartphone.
 | **Ferramentas Especializadas** (CodeWhisperer, Tabnine) | Otimizadas para linguagens/frameworks específicos | Adaptar ao estilo da ferramenta, usar documentação específica | Geralmente mais limitadas em escopo que ferramentas gerais |
 
 **DICA PRÁTICA:** Muitas vezes, a abordagem mais eficaz é usar uma combinação de ferramentas. Por exemplo, discutir a arquitetura em uma ferramenta de chat, gerar diagramas com ferramentas de imagem, implementar o código com assistência do Copilot e automatizar tarefas repetitivas com o Cline.
-`
-  }
+`,
+  },
 ];

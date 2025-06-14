@@ -83,7 +83,7 @@ const quizData: QuizData = {
     },
     {
       id: 'q7',
-      question: 'O que é MCP (Mixture of Conditional Pathways) no contexto de modelos de IA?',
+      question: 'O que é MCP (Model Context Protocol) no contexto de modelos de IA?',
       options: [
         { id: 'a', text: 'Um método para combinar múltiplos modelos de IA em um único sistema' },
         { id: 'b', text: 'Uma técnica para criar caminhos especializados dentro de uma rede neural' },

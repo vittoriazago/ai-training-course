@@ -239,7 +239,7 @@ Os LLMs estão transformando o desenvolvimento de software através de:
 * **Assistentes de código** que consultam documentação oficial e exemplos
 * **Sistemas de suporte** que acessam bases de conhecimento internas
 
-## MCP (Mixture of Conditional Pathways)
+## MCP (Model Context Protocol)
 
 **MCP** é uma arquitetura avançada que permite que diferentes partes de um modelo de IA se especializem em diferentes tipos de tarefas.
 
