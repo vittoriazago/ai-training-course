@@ -260,23 +260,24 @@ Os LLMs estão transformando o desenvolvimento de software através de:
 
 ## MCP (Model Context Protocol)
 
-**MCP** é uma arquitetura avançada que permite que diferentes partes de um modelo de IA se especializem em diferentes tipos de tarefas.
+**MCP** é um protocolo que permite a modelos de IA interagir com ferramentas e recursos externos, estendendo suas capacidades além do seu treinamento inicial. Ele atua como uma ponte entre o modelo de IA e sistemas externos, como APIs, bancos de dados ou outras ferramentas, permitindo que o modelo acesse informações em tempo real, execute ações no mundo real e utilize funcionalidades especializadas.
 
-> **DEFINIÇÃO CHAVE:** MCP é uma abordagem onde um modelo grande contém múltiplos "caminhos" ou sub-redes especializadas que são ativadas condicionalmente dependendo da tarefa.
+> **DEFINIÇÃO CHAVE:** MCP (Model Context Protocol) é um protocolo de comunicação que permite a agentes de IA acessar e utilizar ferramentas e recursos externos, integrando-os ao seu fluxo de trabalho para expandir suas capacidades e contexto.
 
 ### Como Funciona o MCP
 
-1. **Roteamento:** O modelo determina qual caminho especializado usar para uma entrada
-2. **Ativação condicional:** Apenas as partes relevantes do modelo são ativadas
-3. **Especialização:** Cada caminho se torna especialista em um tipo específico de tarefa
-4. **Integração:** Os resultados dos caminhos especializados são combinados quando necessário
+1. **Descoberta de Ferramentas:** O agente de IA pode descobrir ferramentas e recursos disponíveis através do protocolo.
+2. **Execução de Ferramentas:** O agente invoca ferramentas externas, passando os argumentos necessários.
+3. **Acesso a Recursos:** O agente pode acessar dados ou informações de recursos externos.
+4. **Integração de Contexto:** Os resultados das ferramentas e recursos são integrados ao contexto do agente para informar suas próximas ações.
 
 ### Benefícios do MCP
 
-* **Eficiência computacional** - ativa apenas partes necessárias do modelo
-* **Melhor desempenho em tarefas específicas** - especialização de sub-redes
-* **Redução de interferência** entre diferentes tipos de conhecimento
-* **Escalabilidade** para adicionar novas capacidades sem retreinar todo o modelo
+* **Extensibilidade:** Permite que a IA utilize uma gama ilimitada de ferramentas e dados externos.
+* **Atualização em Tempo Real:** Acesso a informações que não estavam presentes no treinamento do modelo.
+* **Ação no Mundo Real:** Capacidade de executar operações e interagir com sistemas externos.
+* **Redução de Alucinações:** Ao consultar fontes externas, a IA pode fornecer respostas mais precisas e factuais.
+* **Modularidade:** Novas ferramentas e recursos podem ser adicionados sem a necessidade de retreinar o modelo.
 
 ## Outras Siglas e Conceitos Importantes
 
